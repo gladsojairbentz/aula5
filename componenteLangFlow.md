@@ -42,7 +42,7 @@ class TavilySearchAPIComponent(LCToolComponent):
         try:
             from langchain_community.tools.tavily_search import TavilySearchResults
             from langchain.utilities.tavily_search import TavilySearchAPIWrapper
-            tavilySearchAPIWrapper = TavilySearchAPIWrapper(tavily_api_key=self.tavily_api_key)
+            tavilySearchAPIWrapper = TavilySearchAPIWrapper(tavily_api_key="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")
         except ImportError:
             raise ImportError("Please install langchain to use TavilySearchAPIWrapper.")
         return TavilySearchResults(api_wrapper=tavilySearchAPIWrapper)
