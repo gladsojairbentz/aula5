@@ -1,4 +1,3 @@
-```python
 from typing import Union
 
 from langchain_core.tools import Tool
@@ -46,6 +45,3 @@ class TavilySearchAPIComponent(LCToolComponent):
         except ImportError:
             raise ImportError("Please install langchain to use TavilySearchAPIWrapper.")
         return TavilySearchResults(api_wrapper=tavilySearchAPIWrapper)
-```
-
-
